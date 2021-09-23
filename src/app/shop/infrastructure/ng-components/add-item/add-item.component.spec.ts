@@ -43,9 +43,9 @@ describe('AddItemComponent', () => {
       spyOn(component, 'saveItem');
       let saveItemButton = fixture.debugElement.query(By.css('button')).nativeElement;
       saveItemButton.click();
-      expect(component.saveItem).toHaveBeenCalledTimes(0);
-      //expect(saveItemButton.enabled).toBeFalsy();
-      //expect(saveItemButton.disabled).toBeTruthy();
+      expect(component.saveItem).toHaveBeenCalledTimes(0); // remember: button is disabled if form is invalid
+      //expect(saveItemButton.enabled).toBeFalsy(); // this also could work as a valid expect
+      //expect(saveItemButton.disabled).toBeTruthy(); // this also could work as a valid expect
    });
    it('button save should be enabled', () => {
       let saveItemButton = fixture.debugElement.query(By.css('button')).nativeElement;

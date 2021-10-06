@@ -16,7 +16,7 @@ export class ItemComponent implements OnInit {
    ngOnInit(): void {
    }
 
-   like(){
+   like() {
       console.info('like ' + this.name);
    }
 

@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { AddItemComponent } from './shop/infrastructure/ng-components/add-item/add-item.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { UsersComponent } from './users/infrastructure/ng-components/users/users.component';
+import { ItemDetailComponent } from './shop/infrastructure/ng-components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UsersComponent } from './users/infrastructure/ng-components/users/users
     ItemsComponent,
     ItemComponent,
     AddItemComponent,
-    UsersComponent
+    UsersComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,

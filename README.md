@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). You can run the tests even without the server running 😲 
 
 <br />
 
@@ -35,6 +35,8 @@ It is intended to be an introduction to unit testing with jasmine, providing inf
 <br />
 
 ### Test doubles
+Son un término genérico que hace referencia a cualquier caso en el que se reemplaza un objeto de producción con otro con el único objetivo de probar el código.
+
 According with Gerard Meszaros there are at least 5 kinds of doubles
 https://en.wikipedia.org/wiki/Test_double
 - Test stub: used for providing the tested code with "indirect input".
@@ -106,24 +108,26 @@ To help a test suite DRY up any duplicated setup and teardown code, Jasmine prov
 
 ## Testing Cases / How to test...
 
-### Testing componente creation
+### Testing component creation
 - You can see an example at **item.component.spec.ts**
 - this is a very basic test, but it's well documented.
 
 ### Testing form validation
 You can see an example at **add-item.component.spec.ts**
 
-### Testing: llamada de componente a servicio
+### Testing sharing data from parent to child (using @Input)
+You can see an example at **item-detail.component.spec.ts**
+
+### Testing calling a service from a component
 You can see an example at **users.component.spec.ts**
 
-### Testing props
+### RouterLink
 // TODO: pending to code
 
 ### Testing service against rest api
 // TODO: pending to code
 - no tengo claro si es un test muy util, porque se mockea la base de datos y da la impresión de que siempre funciona.
 - imports: [HttpClientModule]
-
 
 ### Testing service against **real** rest api
 // TODO: pending to code

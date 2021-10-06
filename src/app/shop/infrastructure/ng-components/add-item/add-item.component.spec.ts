@@ -4,7 +4,7 @@ import { AddItemComponent } from './add-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-describe('AddItemComponent', () => {
+describe('AddItemComponent: testing form validation', () => {
    let component: AddItemComponent;
    let fixture: ComponentFixture<AddItemComponent>;
 

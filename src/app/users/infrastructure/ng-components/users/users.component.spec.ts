@@ -4,7 +4,7 @@ import { of } from 'rxjs';
 
 import { UsersComponent } from './users.component';
 
-describe('UsersComponent', () => {
+describe('UsersComponent: testing calling a service from a component.', () => {
    let component: UsersComponent;
    let fixture: ComponentFixture<UsersComponent>;
 

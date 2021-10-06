@@ -1,10 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ItemComponent } from './item.component';
 
 // Creamos la Suite de tests para este componente.
 // los tests se ejecutan con el comando $ ng test
-describe('ItemComponent', () => {
+describe('ItemComponent: testing basic component creation', () => {
    // variable con el propio componente a testear
    let component: ItemComponent;
    // es el componente a testear pero añadiendo más información para que sea más fácil de testear.
@@ -37,6 +36,7 @@ describe('ItemComponent', () => {
       /* Para referenciar el componente en sí del fixture usa componentInstance;
       ya que fixture proporciona más metodos y parámetros a parte del propio componente. */
       component = fixture.componentInstance;
+
       /*
       - Al invocar detectChanges() le decimos a TestBed que realice el enlace de datos.
       - Es imprescindible para los tests, da error si no está.
@@ -44,6 +44,7 @@ describe('ItemComponent', () => {
         It gives the tester an opportunity to inspect and change the state of the component before Angular 
         initiates data binding and calls lifecycle hooks. */
       fixture.detectChanges();
+
    });
 
    // Test para comprobar que el componente se crea correctamente

@@ -4,6 +4,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <br />
 
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+<br />
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+<br />
+
+## About this project
+It is intended to be an introduction to unit testing with jasmine, providing information on the most basic concepts and sample tests. This is a work in progress, so, content will be added whenever possible.
+
+<br />
+
 ## About Jasmine tests
 > Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests. It's developed by Pivotal Labs and is open-source.
 
@@ -81,16 +98,11 @@ To help a test suite DRY up any duplicated setup and teardown code, Jasmine prov
 
 <br />
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Jasmine methods
+- TestBed: modulo de angular que nos permite manipular las pruebas y configurarlas.
+- SpyOn is a Jasmine feature that allows dynamically intercepting the calls to a function nd change its result.
 
 <br />
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
 
 ## Testing Cases / How to test...
 
@@ -111,13 +123,14 @@ You can see an example at **users.component.spec.ts**
 // TODO: pending to code
 - no tengo claro si es un test muy util, porque se mockea la base de datos y da la impresión de que siempre funciona.
 - imports: [HttpClientModule]
-- SpyOn is a Jasmine feature that allows dynamically intercepting the calls to a function nd change its result.
+
 
 ### Testing service against **real** rest api
 // TODO: pending to code
-// documentation: https://stackoverflow.com/questions/59204306/trying-to-run-angular-httpclient-jasmine-test-against-live-rest-api-nothing-hap
+- documentation: 
+  - https://stackoverflow.com/questions/59204306/trying-to-run-angular-httpclient-jasmine-test-against-live-rest-api-nothing-hap
 
-- TestBed: modulo de angular que nos permite manipular las pruebas y configurarlas.
+
 
 
 

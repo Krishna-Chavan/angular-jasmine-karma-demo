@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,13 +13,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { AddItemComponent } from './shop/infrastructure/ng-components/add-item/add-item.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { UsersComponent } from './users/infrastructure/ng-components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemsComponent,
     ItemComponent,
-    AddItemComponent
+    AddItemComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

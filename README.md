@@ -90,3 +90,37 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+
+## Testing Cases / How to test...
+
+### Testing componente creation
+- You can see an example at **item.component.spec.ts**
+- this is a very basic test, but it's well documented.
+
+### Testing form validation
+You can see an example at **add-item.component.spec.ts**
+
+### Testing: llamada de componente a servicio
+You can see an example at **users.component.spec.ts**
+
+### Testing props
+// TODO: pending to code
+
+### Testing service against rest api
+// TODO: pending to code
+- no tengo claro si es un test muy util, porque se mockea la base de datos y da la impresión de que siempre funciona.
+- imports: [HttpClientModule]
+- SpyOn is a Jasmine feature that allows dynamically intercepting the calls to a function nd change its result.
+
+### Testing service against **real** rest api
+// TODO: pending to code
+// documentation: https://stackoverflow.com/questions/59204306/trying-to-run-angular-httpclient-jasmine-test-against-live-rest-api-nothing-hap
+
+- TestBed: modulo de angular que nos permite manipular las pruebas y configurarlas.
+
+
+
+
+
+

@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test -- --no-watch
+        run: ng test
 
       - name: Publish JUnit test results
         uses: actions/upload-artifact@v2
